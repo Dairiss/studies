@@ -1,10 +1,23 @@
-print('Enter number of rooms:\n')
-n=int(input())
-print('Enter the number of occupied rooms\n')
-k=int(input())
-if (k==0 or k==n): print('0 0\n')
-else:
-	if (k == n // 2): c = k
-	elif (k < n // 2): c = k + 1
-	else: c = n - k
-	print('1 ',c, '\n')
+def main():
+    print('Enter number of rooms:')
+    n=int(input())
+    print()
+
+    print('Enter the number of occupied rooms')
+    k=int(input())
+    print()
+
+    if (k == 0 or k == n):
+        print('0 0')
+    else:
+        if (k == n // 2):
+            c = k
+        elif (k < n // 2):
+            c = k + 1
+        else:
+            c = n - k
+        print('result:', '1 ', c)
+
+
+if __name__ == '__main__':
+    main()
