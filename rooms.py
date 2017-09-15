@@ -16,7 +16,7 @@ def main():
             c = k + 1
         else:
             c = n - k
-        print('result:', '1 ', c)
+        print('result: 1 ', c)
 
 
 if __name__ == '__main__':
