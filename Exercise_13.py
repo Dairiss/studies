@@ -1,15 +1,11 @@
 #http://www.practicepython.org/exercise/2014/04/30/13-fibonacci.html
 
 
-def fib(a):
-    i = 1
-    j = 1
-    print(i,j,end=" ")
-    for k in range(a):
-        c = i
-        i += j
-        j = c
-        print(i,end=" ")
+def fib(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+        print(a)
 
 
 
